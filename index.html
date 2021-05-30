@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+
+        <!-- Google Font CSS -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Index CSS -->
+        <link rel="stylesheet" href="./index.css" />
+
+        <!-- Bootstrap Scripts -->
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Typewriter Script -->
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    </head>
+
+    <body>
+        <div class="container-fluid centered">
+            <div class="page centered">
+                <div class="title">Tan Eu Jin</div>
+                <div id="typewriter" class="texts"></div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        let typewriterElement = document.getElementById("typewriter");
+
+        // string assignment
+        let strings = [
+            "hello and welcome",
+            "hello dan selamat datang",
+            "你好，欢迎",
+        ];
+
+        let hour = new Date().getHours();
+        console.log(hour);
+        if (hour >= 0 && hour < 12) {
+            strings = [
+                "hello, good morning",
+                "hello, selamat pagi",
+                "你好，早安好",
+            ];
+        } else if (hour >= 12 && hour < 17) {
+            strings = [
+                "hello, good afternoon",
+                "hello, selamat tengah hari",
+                "你好，午安好",
+            ];
+        } else if (hour >= 17 && hour < 24) {
+            strings = [
+                "hello, good evening",
+                "hello, selamat petang",
+                "你好，晚安好",
+            ];
+        }
+
+        let typewriterConfigs = {
+            strings: strings,
+            loop: true,
+            autoStart: true,
+            delay: 50,
+            deleteSpeed: 50,
+            pauseFor: 3000,
+        };
+
+        let typewriter = new Typewriter(typewriterElement, typewriterConfigs);
+        typewriter.start();
+    </script>
+</html>
