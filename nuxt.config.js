@@ -1,5 +1,18 @@
 export default {
   /*
+   ** Build configuration
+   */
+  build: {
+    /*
+     ** You can extend webpack config here
+     */
+    extend(config, ctx) {
+      if (ctx && ctx.isClient) {
+        config.optimization.splitChunks.maxSize = 64000;
+      }
+    },
+  },
+  /*
    ** Headers of the page
    ** Doc: https://vue-meta.nuxtjs.org/api/#metainfo-properties
    */
@@ -33,5 +46,16 @@ export default {
     customVariables: ["~/assets/variables.scss"],
     treeShake: true,
     defaultAssets: false,
+  },
+  server: {
+    host: "0",
+  },
+  "nuxt-compress": {
+    gzip: {
+      threshold: 8192,
+    },
+    brotli: {
+      threshold: 8192,
+    },
   },
 };
