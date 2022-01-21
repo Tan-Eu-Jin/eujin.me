@@ -22,7 +22,8 @@ export default {
       },
     ],
   },
-  modules: ["@nuxtjs/google-gtag", "@nuxtjs/vuetify"],
+  modules: ["@nuxtjs/google-gtag", "@nuxtjs/vuetify", "nuxt-compress"],
+  components: true,
   "google-gtag": {
     id: "G-250JQS16WE",
     debug: true,
