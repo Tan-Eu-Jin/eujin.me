@@ -11,15 +11,23 @@ This website is a side project worked on in my free time to provide myself the f
 ## **_Tech_**
 
 [**Digital Ocean**](https://www.digitalocean.com/) _Ubuntu 18.04.3 (LTS) x64_ - Virtual machine hosting and whatnots.
+
 [**Nginx**](https://www.nginx.com/) _1.14.0 (Ubuntu)_ - Web server configurations and all thing configs.
+
 [**Node**](https://nodejs.org/en/) _v16.13.0_ - Makes all the following Javascript library tick properly.
+
 [**NPM**](https://www.npmjs.com/) _v6.14.4_ - Lets you get node packages easily. You will need npm to get the other packages.
 `Note: NVM (Node Version Manager) can be used to ease the installation of NPM (Node Package Manage)`
+
 [**NuxtJS**](https://nuxtjs.ir/) _v2.2.0_ - The Javascript framework for web development.
+
 [**VueJS**](https://vuejs.org/) _v2.6.14_- Frontend library shipped with NuxtJS.
+
 [**Vuetify**](https://vuetifyjs.com/en/) _v2.6.2_ - Material design library add-on for NuxtJS.
+
 [**Google Analytics via Google Tags**](https://www.npmjs.com/package/@nuxtjs/google-tag-manager) _v2.3.2_ - The project uses the nuxt/google-tag-manage module as an extention to handle all things analytics.
-[Backend]() - I'll think of something soon, maybe... Need ideas. Open for suggestions.
+
+[**Backend**]() - I'll think of something soon, maybe... Need ideas. Open for suggestions.
 
 ## **_Set Up_**
 
