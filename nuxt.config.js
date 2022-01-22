@@ -45,7 +45,12 @@ export default {
     theme: { light: true },
     customVariables: ["~/assets/variables.scss"],
     treeShake: true,
-    defaultAssets: false,
+    defaultAssets: {
+      icons: "mdi",
+    },
+    icons: {
+      iconfont: "mdi",
+    },
   },
   server: {
     host: "0",

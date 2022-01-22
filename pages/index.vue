@@ -1,6 +1,7 @@
 <template>
     <v-app class="fill-height">
         <IndexGreeter />
+        <Footer />
     </v-app>
 </template>
 
