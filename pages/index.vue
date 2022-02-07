@@ -11,9 +11,9 @@ export default {
         title: "eujin.me 🚀",
         meta: [
             {
-                hid: "Website of Tan Eu Jin",
-                name: "Website of Tan Eu Jin",
-                content: "Website of Tan Eu Jin",
+                hid: "Index page of Tan Eu Jin",
+                name: "Index page of Tan Eu Jin",
+                content: "Index page of Tan Eu Jin",
             },
         ],
     },

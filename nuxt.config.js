@@ -17,14 +17,26 @@ export default {
    ** Doc: https://vue-meta.nuxtjs.org/api/#metainfo-properties
    */
   head: {
-    title: "eujin.me",
+    title: "eujin.me 🚀",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
-        hid: "eujin.me",
-        name: "eujin.me project by Tan Eu Jin",
-        content: "NodeJs project using the NuxtJs framework",
+        hid: "eujin.me 🚀",
+        name: "eujin.me 🚀",
+        content: "eujin.me 🚀",
+      },
+      { hid: "og:url", name: "og:title", content: "https://eujin.me/" },
+      { hid: "og:title", name: "og:title", content: "eujin.me 🚀" },
+      {
+        hid: "og:description",
+        name: "og:description",
+        content: "Website of Tan Eu Jin. Built using the NuxtJs framework.",
+      },
+      {
+        hid: "og:image",
+        name: "og:image",
+        content: "https://eujin.me/og-image.png",
       },
     ],
     link: [
