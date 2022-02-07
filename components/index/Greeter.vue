@@ -1,11 +1,35 @@
 <template>
     <v-container fill-height align-content-center>
         <v-row>
-            <v-col
-                cols="12"
-                class="text-sm-h1 text-h2 font-weight-black text-center"
-            >
-                Tan Eu Jin
+            <v-col cols="12" class="text-center">
+                <v-hover v-slot="{ hover }" close-delay="200">
+                    <div>
+                        <div
+                            class="
+                                ma-2
+                                pa-2
+                                text-sm-h1 text-h2
+                                font-weight-black
+                            "
+                        >
+                            Tan Eu Jin
+                        </div>
+                        <v-expand-transition>
+                            <div v-if="hover">
+                                <v-btn
+                                    plain
+                                    text
+                                    depressed
+                                    target="_blank"
+                                    href="https://www.linkedin.com/in/eujin-tan/"
+                                >
+                                    Lets connect on
+                                    <v-icon class="mx-1">mdi-linkedin</v-icon>
+                                </v-btn>
+                            </div>
+                        </v-expand-transition>
+                    </div>
+                </v-hover>
             </v-col>
         </v-row>
         <v-row>
