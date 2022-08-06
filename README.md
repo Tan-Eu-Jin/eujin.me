@@ -39,7 +39,7 @@ Run the following set of commands in the terminal, inside the project directory.
 ```
 $ cd ~/eujin.me/
 $ npm install
-$ npm build
+$ npm run build
 $ npm start
 ```
 
