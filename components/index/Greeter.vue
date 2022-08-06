@@ -4,15 +4,10 @@
             <v-col cols="12" class="text-center">
                 <v-hover v-slot="{ hover }" close-delay="200">
                     <div>
-                        <div
-                            class="
-                                ma-2
-                                pa-2
-                                text-sm-h1 text-h2
-                                font-weight-black
-                            "
-                        >
-                            Tan Eu Jin
+                        <div class="ma-2 pa-2">
+                            <h1 class="text-sm-h1 text-h2 font-weight-black">
+                                Tan Eu Jin
+                            </h1>
                         </div>
                         <v-expand-transition>
                             <div v-if="hover">
